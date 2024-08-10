@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function Detail({data}) {
+const Detail=()=> {
     return (
         <div className='basis-1/4 p-4 border-l-[1px] border-[#33383F]'>
             <div className='bg-[#ECEFF3] dark:bg-[#23272C] py-2 px-3 rounded-lg'>

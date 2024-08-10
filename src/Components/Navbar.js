@@ -1,10 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import useTheme from '../hooks/useTheme';
 
-function Navbar() {
-  const { theme, toggleTheme } = useTheme();
 
+const Navbar=({toggleTheme})=> {
   return (
     <div className='w-full bg-white dark:bg-[#1F1F1F] h-16 border-b-[1px] border-[#DEDEDE] dark:border-[#343A40] flex justify-between items-center p-6'>
       <span className='text-[#5B5F66] dark:text-white font-sans font-bold text-base'>Onebox</span>

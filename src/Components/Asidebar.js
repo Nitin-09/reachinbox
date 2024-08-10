@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function Asidebar() {
+const Asidebar=()=> {
     return (
         <div className='h-screen px-1 w-14 flex flex-col items-center gap-6 border-r-[1px] border-[#D8D8D8] dark:border-[#343A40] bg-[#FAFAFA] dark:bg-[#101113]'>
             <div className='w-12 h-[70px] flex justify-center items-center'>

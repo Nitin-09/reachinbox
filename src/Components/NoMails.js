@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function NoMails() {
+const NoMails=()=> {
     return (
         <div className='w-full h-full flex justify-center items-center '>
             <div className='flex flex-col justify-center items-center gap-12'>

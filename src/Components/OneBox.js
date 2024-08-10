@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-function OneBox({ threadData, toggleModalVisibility }) {
+const OneBox =({ threadData, toggleModalVisibility }) => {
   const [viewAll, setViewAll] = useState(false);
 
   const handleViewAllClick = () => {

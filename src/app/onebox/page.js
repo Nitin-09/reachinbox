@@ -8,8 +8,10 @@ import OneBox from '../../Components/OneBox';
 import Detail from '../../Components/Detail';
 import ReplyModal from '../../Components/ReplyModal';
 import NoMails from '../../Components/NoMails';
+import useTheme from '../../hooks/useTheme';
 
 export default function Page() {
+  const { theme, toggleTheme } = useTheme();
   const searchParams = useSearchParams();
   const token = searchParams.get('token');
   const [data, setData] = useState(null);
@@ -177,7 +179,7 @@ export default function Page() {
       <ReplyModal isVisible={isModalVisible} onClose={toggleModalVisibility} threadId={selectedThreadId} />
       <Asidebar />
       <div className='bg-white dark:bg-black h-full w-full'>
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} />
         {data?.data?.length == 0 ?
         (
           <div className='w-full h-full'>
@@ -188,7 +190,7 @@ export default function Page() {
         <div className='flex w-full flex-4'>
           <AllMails  data={data} onMailClick={handleMailClick} />
           <OneBox threadData={threadData} toggleModalVisibility={toggleModalVisibility} />
-          <Detail data={data} />
+          <Detail/>
         </div>
         )}
       </div>
