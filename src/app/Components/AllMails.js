@@ -21,13 +21,13 @@ function AllMails({ data, onMailClick }) {
             <span className='text-[#343A40] dark:text-white text-sm font-medium py-[2px] px-[10px]'>25/25 <span className='text-[#7F7F7F]'>Inboxes selected</span></span>
           </div>
           <button className='h-8 w-8 bg-white dark:bg-[#25262B] border-[1px] dark:border-0 border-[#DFE3E8] flex justify-center items-center rounded-[4px] p-2'>
-            <Image width={30} height={30} src='/reload.svg' className='invert dark:invert-0' alt=''></Image>
+            <Image width={30} height={30} src='/reload.svg' alt="" className='invert dark:invert-0' alt=''></Image>
           </button>
         </div>
         <div>
           <div className='p-2 flex flex-col gap-4'>
             <div className='flex bg-[#F4F6F8] dark:bg-[#23272C] border-[1px]  border-[#ffffff1d] py-1 px-[6px] rounded-md gap-2'>
-              <Image width={20} height={20} src='/search1.svg' className='invert dark:invert-0'  alt=''></Image>
+              <Image width={20} height={20} src='/search1.svg' alt="" className='invert dark:invert-0'  alt=''></Image>
               <input className='bg-transparent text-[#ADBAC7] dark:text-[#ffffff2b] outline-none dark:placeholder:text-[#ffffff2b] placeholder:text-[#ADBAC7]' placeholder='Search' type="text" />
             </div>
           </div>
@@ -38,7 +38,7 @@ function AllMails({ data, onMailClick }) {
             </div>
             <div className='flex items-center gap-4'>
               <span className='text-[#172B4D] dark:text-[#E6E6E6] text-sm font-semibold'>Newest</span>
-              <Image width={15} height={15} src='/downArrow.svg' className='invert dark:invert-0' alt=''></Image>
+              <Image width={15} height={15} src='/downArrow.svg' alt="" className='invert dark:invert-0' alt=''></Image>
             </div>
           </div>
         </div>
