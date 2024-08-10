@@ -37,8 +37,13 @@ function Navbar() {
           className='flex border-2 w-fit bg-[#E9EAEC] dark:bg-[#222426] border-[#DADEE1] dark:border-[#343A40] gap-[7px] px-[5px] py-[3px] rounded-[80px] cursor-pointer'
           onClick={toggleTheme}
         >
+<<<<<<< HEAD
           <Image width={20} height={20} src='\moon.svg' alt=''></Image>
           <Image width={20} height={20} src='\sun.svg' alt=''></Image>
+=======
+          <Image width={20} height={20} alt='' src='\moon.svg'></Image>
+          <Image width={20} height={20} alt='' src='\sun.svg'></Image>
+>>>>>>> c2a07dc2cf82f20d3309ab1530ea8e9d442938f6
         </div>
         <div className='flex gap-2 justify-center items-center'>
           <span className='font-sans font-semibold text-sm text-[#454F5B] dark:text-white'>Tim's Workspace</span>
