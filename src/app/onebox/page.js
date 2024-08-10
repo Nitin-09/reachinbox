@@ -1,15 +1,15 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Asidebar from '../Components/Asidebar';
-import Navbar from '../Components/Navbar';
-import AllMails from '../Components/AllMails';
-import OneBox from '../Components/OneBox';
-import Detail from '../Components/Detail';
-import ReplyModal from '../Components/ReplyModal';
-import NoMails from '../Components/NoMails';
+import Asidebar from '../../Components/Asidebar';
+import Navbar from '../../Components/Navbar';
+import AllMails from '../../Components/AllMails';
+import OneBox from '../../Components/OneBox';
+import Detail from '../../Components/Detail';
+import ReplyModal from '../../Components/ReplyModal';
+import NoMails from '../../Components/NoMails';
 
-function Page() {
+export default function Page() {
   const searchParams = useSearchParams();
   const token = searchParams.get('token');
   const [data, setData] = useState(null);
@@ -154,6 +154,7 @@ function Page() {
     return () => {
       window.removeEventListener('keydown', handleKeydown);
     };
+    /* eslint-disable */
   }, [selectedThreadId]);
 
   useEffect(() => {
@@ -168,6 +169,7 @@ function Page() {
     return () => {
       window.removeEventListener('keydown', handleKeydown);
     };
+    /* eslint-disable */
   }, []);
 
   return (
@@ -193,5 +195,3 @@ function Page() {
     </div>
   );
 }
-
-export default Page;

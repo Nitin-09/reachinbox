@@ -8,7 +8,7 @@ function Asidebar() {
                 <Image width={32} height={32} className='' src="\logo.svg" alt=''></Image>
             </div>
             <div className='w-full h-full py-4 px-2'>
-                <div className='flex flex-col justify-center items-center aspect-square w-7 gap-8'>
+                <div className='flex flex-col justify-center items-center w-7 gap-8'>
                     <Image width={24} height={24} className='object-contain' src="\home.svg" alt=''></Image>
                     <Image width={20} height={20} className='object-contain' src="\search.svg" alt=''></Image>
                     <Image width={20} height={20} className='object-contain' src="\email.svg" alt=''></Image>
