@@ -37,12 +37,12 @@ function Navbar() {
           className='flex border-2 w-fit bg-[#E9EAEC] dark:bg-[#222426] border-[#DADEE1] dark:border-[#343A40] gap-[7px] px-[5px] py-[3px] rounded-[80px] cursor-pointer'
           onClick={toggleTheme}
         >
-          <Image width={20} height={20} src='\moon.svg'></Image>
-          <Image width={20} height={20} src='\sun.svg'></Image>
+          <Image width={20} height={20} src='\moon.svg' alt=''></Image>
+          <Image width={20} height={20} src='\sun.svg' alt=''></Image>
         </div>
         <div className='flex gap-2 justify-center items-center'>
           <span className='font-sans font-semibold text-sm text-[#454F5B] dark:text-white'>Tim's Workspace</span>
-          <span><Image width={20} height={20} src='\downArrow.svg' className='invert dark:invert-0'></Image></span>
+          <span><Image width={20} height={20} src='\downArrow.svg' className='invert dark:invert-0' alt=''></Image></span>
         </div>
       </div>
     </div>
